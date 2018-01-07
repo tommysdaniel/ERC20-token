@@ -6,7 +6,7 @@ contract Lockable is Ownable {
     // better to provide constant time to avoid locked all transactions tokens in case of owner wallet get hacked
     uint256 internal constant lockedUntil = 1515060242; // unix time
     
-    // the address that can make transactions when the transaction is locked 
+    // the address that can be used to make transactions when the transaction is locked 
     address internal allowedSender;
 
     /**
