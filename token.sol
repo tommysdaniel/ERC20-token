@@ -1,3 +1,10 @@
+pragma solidity ^0.4.18;
+
+import './safemath.sol'
+import './ownable.sol'
+import './erc20.sol'
+import './Lockable'
+
 contract Token is ERC20, Lockable {
     using SafeMath for uint256;
 

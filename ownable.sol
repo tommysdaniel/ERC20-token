@@ -1,3 +1,5 @@
+pragma solidity ^0.4.18;
+
 /**
  *
  * @dev This contract was taken from https://github.com/OpenZeppelin
