@@ -22,7 +22,7 @@ contract Lockable is Ownable {
     * @dev Allows the current owner to transfer control of the contract to a newOwner.
     * @param _sender The address to allow transfer(example: Crowdsale contract address)
     */
-    function allowLockedTransfer(address _sender) {
+    function allowLockedTransfer(address _sender) onlyOwner {
         allowedSender = _sender;
     }
 
